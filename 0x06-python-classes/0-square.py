@@ -1,4 +1,8 @@
 #!/usr/bin/python3
-class Square:
-    """Write an empty class Square that defines a square:"""
+
+"""Define a new class: """
+
+
+class Square(object):
+    """A simple example class"""
     pass
