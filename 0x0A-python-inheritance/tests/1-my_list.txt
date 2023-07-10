@@ -1,0 +1,40 @@
+The ``print_sorted`` module
+==============================
+
+Using ``Print a sorted list``
+------------------------------
+
+	>>> MyList = __import__('1-my_list').MyList
+
+Validate cases:
+
+	>>> my_list = MyList()
+    	>>> my_list.append(1)
+    	>>> my_list.append(4)
+    	>>> my_list.append(2)
+    	>>> my_list.append(3)
+    	>>> my_list.append(5)
+    	>>> print(my_list)
+    	[1, 4, 2, 3, 5]
+    	>>> my_list.print_sorted()
+    	[1, 2, 3, 4, 5]
+    	>>> print(my_list)
+    	[1, 4, 2, 3, 5]
+	>>> my_list.append("Holberton")
+	>>> my_list.print_sorted()
+	Traceback (most recent call last):
+	TypeError: '<' not supported between instances of 'str' and 'int'
+	>>> my_list.pop()
+	'Holberton'
+	>>> my_list.append(20)
+	>>> my_list.append(-10)
+	>>> my_list.print_sorted()
+	[-10, 1, 2, 3, 4, 5, 20]
+	>>> my_list.append(3 * 3)
+	>>> my_list.print_sorted()
+	[-10, 1, 2, 3, 4, 5, 9, 20]
+	>>> del my_list
+	>>> my_list
+	Traceback (most recent call last):
+  	  File "<stdin>", line 1, in <module>
+	NameError: name 'my_list' is not defined
